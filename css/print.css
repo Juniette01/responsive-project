@@ -1,0 +1,36 @@
+@media print {
+/* css blocks */
+
+* {
+  background-color: transparent; /*no backgrounds for print */
+  color: black;
+}
+
+@page {
+  margin: 0.5;
+}
+
+html {
+  font-size: 12pt;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+a[href^="https"]:after {
+  content: "("attr(href)")";
+}
+
+
+main{
+  display: block;
+}
+
+
+}
